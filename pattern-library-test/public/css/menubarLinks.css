@@ -1,0 +1,42 @@
+  ul[role="menubar"] [role="menuitem"]:focus,
+  ul[role="menubar"] [role="menuitem"]:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  ul[role="menubar"] li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul[role="menubar"] > li {
+    display: inline;
+    position: relative;
+  }
+  
+  ul[role="menubar"] > li > a[aria-haspopup="true"]::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d7";
+    padding-left: 0.25em;
+  }
+  
+  #main-menu.navbar ul[role="menubar"].navbar-nav > li ul[role="menu"].dropdown-menu {
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: auto;
+  }
+ 
+  ul[role="menubar"] ul[role="menu"] li a {
+    color: #ffffff;
+  }
+  
+  ul[role="menubar"] ul[role="menu"] a[aria-haspopup="true"]::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    padding-right: 2em;
+  }

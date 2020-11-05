@@ -1,0 +1,7 @@
+title: Location Card
+context:
+    title: Location Name
+    field_subtitle: Mitchell Memorial Library, 2nd Floor
+    view-node: #
+    field_hero_image: /images/dogwood-flowers-hero.jpg
+    field_hero_image_alt: alt text for image
