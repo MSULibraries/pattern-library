@@ -1,0 +1,6 @@
+title: Content
+collated: false
+preview: '@preview-main'
+context:
+    field_image_inset: /images/lincoln_address.jpg
+    field_image_inset_alt: 'Lincoln giving the Gettysburg Address'
