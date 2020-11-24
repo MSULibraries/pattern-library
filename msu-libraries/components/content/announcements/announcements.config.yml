@@ -1,0 +1,6 @@
+title: Announcement component
+collated: true
+context:
+    title: Announcement Title
+    text: This is an example announcement!
+    button-text: Call to action

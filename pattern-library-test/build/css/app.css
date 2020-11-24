@@ -2,16 +2,21 @@
  * lib_theme (https://sitedomain.msstate.edu)
  * Author: Library DIWS Web Development Team
  */
- body {
-    font-family: "TruenoRegular", sans-serif;
-}
-h1, h2, h3 {
-    font-family: "TruenoRegular", sans-serif;
+h1, .uppercase {
     text-transform: uppercase;
 }
-.page p {
+.page p.msulib-sans {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.msulib-serif {
     font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
-    max-width: 72ex;
+}  
+.page p, .page ul, .page ol {
+    font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.10rem;
+}
+.no-margin p {
+    margin: 0;
 }
 .container-fluid {
     max-width: 1450px;
@@ -265,8 +270,34 @@ a .card-hover, a .card-hover-jump {
     right: unset;
 }
 
+
+
+/* LibCal widget Styles */
+
 #workshop-list h3 {
     display: none;
+}
+#workshop-list ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    font-family: "TruenoRegular", sans-serif;
+    font-size: 1rem;
+}
+#workshop-list li {
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+#workshop-list a {
+    font-weight: bold;
+}
+#workshop-list li span {
+    font-size: small;
+    background-color: #FFB81C;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    margin-top: 0.25rem;
+    border-radius: 4px;
 }
 #workshop-list .table-responsive {
     padding: 1rem;
@@ -290,11 +321,13 @@ a .card-hover, a .card-hover-jump {
     padding: 0 0.5em;
     font-weight: bold;
     display: inline-block;
+    border-radius: 4px;
 }
 
 .hours-today .hours-col-time span {
     background-color: #FFB81C;
     padding: 0.25rem 0.5rem;
+    border-radius: 4px;
 }
 .hours-today .hours-col-loc,
 #api_hours_today_iid1264_lid1484 .hours-today .hours-depart {
@@ -303,4 +336,31 @@ a .card-hover, a .card-hover-jump {
 
 .s-la-widget-modal.fade:not(.show) {
     opacity: 1;
+}
+.live-chat-btn,
+.live-chat-hours,
+.live-chat-hours .table-responsive,
+.live-chat-hours .hours-today {
+    display: inline;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #title--home {
+        display: none;
+    }
+    #hero .col-12 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .hero .item {
+        min-height: unset;
+    }
+}
+@media (max-width: 575.98px) {
+    #hero.hero,
+    #hero .item {
+        min-height: unset;
+    }
 }

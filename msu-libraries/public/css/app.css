@@ -1,0 +1,407 @@
+/*!
+ * lib_theme (https://sitedomain.msstate.edu)
+ * Author: Library DIWS Web Development Team
+ */
+ h1, .uppercase {
+  text-transform: uppercase;
+}
+.page p.msulib-sans,
+.page ul.msulib-sans {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.msulib-serif {
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+}
+.page p, .page ul, .page ol {
+  font-family: "Lora", Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.10rem;
+}
+.no-margin p {
+  margin: 0;
+}
+.container-fluid {
+  max-width: 1450px;
+}
+#msu-header .secondary {
+  height: 46px;
+}
+.page {
+  padding-top: 2rem;
+}
+.form--inline {
+  margin-bottom: 30px;
+}
+.alert {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+.alert p {
+  margin: 0;
+}
+#libchat_031cca098b18cdad90bb2ab36b406a72 button.libchat_online,
+.libchat_offline {
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #5d1725;
+  border-color: #5d1725;
+}
+#libchat_031cca098b18cdad90bb2ab36b406a72 button.libchat_online:hover,
+.libchat_offline:hover {
+  background-color: #3e0f19;
+  border-color: #340d15;
+}
+
+a.search-service-btn, .card .small {
+  line-height: 110%;
+}
+
+.bg-shade {
+  background-color: rgba(30, 30, 30, 0.7);
+  display: inline-block;
+}
+
+#main-menu-lib {
+  padding: 0;
+}
+#main-menu-lib button {
+  border: none;
+  background: initial;
+}
+#main-menu-lib .nav-item button {
+  border-right: 1px solid #5D1725;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+#main-menu-lib .nav-item button[aria-expanded="true"] {
+  background: #333333;
+  color: #ffffff;
+}
+#main-menu-lib .dropdown-menu {
+  width: 100%;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  padding: 1rem;
+  background: #333333;
+  color: #ffffff;
+}
+#main-menu-lib h3 {
+  border-bottom: 2px solid;
+}
+#main-menu-lib .list-group-flush .list-group-item {
+  background: #333333;
+  color: #ffffff;
+  margin-bottom: 0;
+  border-bottom: 1px dotted;
+}
+#main-menu-lib a.list-group-item:hover,
+#main-menu-lib a.list-group-item:focus {
+  background: #5D1725;
+}
+
+
+.card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.card {
+  border-radius: 0.25rem;
+  border: none;
+}
+
+.card-hover, 
+.card-hover-jump, 
+.card-hover-primary,
+.card-hover-primary:after, 
+.card-hover-secondary, 
+.card-hover-secondary:after, 
+.card-hover-success, 
+.card-hover-success:after, 
+.card-hover-info, 
+.card-hover-info:after, 
+.card-hover-warning, 
+.card-hover-warning:after, 
+.card-hover-light, 
+.card-hover-light:after, 
+.card-hover-dark, 
+.card-hover-dark:after, 
+.card-hover-warning-up, 
+.card-hover-warning-up:after {
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 0.25rem;
+}
+.card-hover:hover, a:focus > .card-hover {
+  box-shadow: 0.25rem 0.5rem 1rem #222222;
+}
+.card-hover-jump:hover, a:focus > .card-hover-jump {
+  -webkit-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+.card-hover-primary:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  background-color: #5D1725;   
+}
+.card-hover-secondary:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  background-color: #555555;   
+}
+.card-hover-success:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-color: #8F993E;   
+}
+.card-hover-info:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  background-color: #00AEAD;   
+}
+.card-hover-warning:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  background-color: #FFB81C;   
+}
+.card-hover-danger:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  background-color: #DC3545;   
+}
+.card-hover-light:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.6;
+  background-color: #F9F9F9;   
+}
+.card-hover-dark:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  background-color: #333333;
+}
+.card-hover-primary:hover:after, a:focus > .card-hover-primary:after,
+.card-hover-secondary:hover:after, a:focus > .card-hover-secondary:after,
+.card-hover-success:hover:after, a:focus > .card-hover-success:after,
+.card-hover-info:hover:after, a:focus > .card-hover-info:after,
+.card-hover-warning:hover:after, a:focus > .card-hover-warning:after,
+.card-hover-danger:hover:after, a:focus > .card-hover-danger:after,
+.card-hover-light:hover:after, a:focus > .card-hover-light:after,
+.card-hover-dark:hover:after, a:focus > .card-hover-dark:after {
+  background-color: transparent;
+}
+.card-hover-warning-up:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.25;
+  background-color: transparent;   
+}
+.card-hover-warning-up:hover:after, a:focus > .card-hover-warning-up:after {
+  opacity: 0.25;
+  background-color: #FFB81C;   
+}
+
+a .card-hover, a .card-hover-jump {
+  text-decoration: none;
+}
+.card-img-overlay {
+  z-index: 1;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero styles for home, libraries, and location pages */
+.hero {
+  height: 100%;
+}
+.hero .item {
+  height: 100%;
+}
+.hero .bg-fade {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(rgba(30, 30, 30, 0.9)), to(rgba(30, 30, 30, 0.6)));
+  background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0.7) 20%, rgba(30, 30, 30, 0.6) 100%); 
+}
+.hero .bg-fade-bottom {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(rgba(30, 30, 30, 0.3)), to(rgba(30, 30, 30, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(30, 30, 30, 0.3) 50%, rgba(30, 30, 30, 0.8) 70%); 
+}
+.hero h1 {
+  margin-top: 240px;
+}
+
+.card-fade {
+  position: relative;
+  display: inline-block;
+}
+
+.card-fade:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(rgba(30, 30, 30, 0.8)), to(rgba(30, 30, 30, 0.3)));
+  background-image: linear-gradient(to top, rgba(30, 30, 30, 0.8) 25%, rgba(30, 30, 30, 0.3) 60%);   
+  border-radius: 0.25rem;
+}
+.card-fade img {
+  display: block;
+  border-radius: 0.25rem;
+}
+.card-img-overlay {
+  top: unset;
+  right: unset;
+}
+
+
+
+/* LibCal widget Styles */
+
+#workshop-list h3 {
+  display: none;
+}
+#workshop-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  font-family: "TruenoRegular", sans-serif;
+  font-size: 1rem;
+}
+#workshop-list li {
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+#workshop-list a {
+  font-weight: bold;
+}
+#workshop-list li span {
+  font-size: small;
+  background-color: #FFB81C;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+}
+#workshop-list .table-responsive {
+  padding: 1rem;
+  border-bottom: 1px solid #000000;
+}
+#workshop-list .table {
+  margin-bottom: 0;
+}
+#workshop-list .table td {
+  padding: 0;
+  border-top: none;
+}
+#workshop-list .table td.s-lc-ea-l {
+  text-align: right;
+  padding-right: 1rem;
+}
+#workshop-list tr.s-lc-ea-ttit td:nth-child(2) {
+  font-weight: bold;
+}#workshop-list tr.s-lc-ea-tdat td:nth-child(2) {
+  background: #FFB81C;
+  padding: 0 0.5em;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.hours-today .hours-col-time span {
+  background-color: #FFB81C;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+.hours-today .hours-col-loc,
+#api_hours_today_iid1264_lid1484 .hours-today .hours-depart {
+  display: none;
+}
+
+.s-la-widget-modal.fade:not(.show) {
+  opacity: 1;
+}
+.live-chat-btn,
+.live-chat-hours,
+.live-chat-hours .table-responsive,
+.live-chat-hours .hours-today {
+  display: inline;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  #title--home {
+      display: none;
+  }
+  #hero .col-12 {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+  .hero .item {
+      min-height: unset;
+  }
+}
+@media (max-width: 575.98px) {
+  #hero.hero,
+  #hero .item {
+      min-height: unset;
+  }
+}

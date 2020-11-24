@@ -1,0 +1,19 @@
+title: News
+status: ready
+preview: '@preview'
+context:
+  title: 'News items headline'
+  link-to-article: '#'
+  name-of-publisher: 'MSU News Room'
+  image: ''
+  image-alt: ''
+  body: ''
+variants:
+  card:
+    title: Front Page News Card
+    status: ready
+    preview: '@preview'
+  page:
+    title: News Page
+    status: ready
+    preview: '@preview'

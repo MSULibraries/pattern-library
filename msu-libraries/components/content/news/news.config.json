@@ -1,0 +1,30 @@
+{
+  "title": "News Article",
+  "default": "news",
+  "variants": [
+    {
+      "name": "news",
+      "label": "News Page",
+      "status": "wip",
+      "preview": "@preview-main-no-first"
+    },
+    {
+      "name": "article",
+      "label": "News Article",
+      "status": "ready",
+      "preview": "@preview-main-no-first",
+      "context": {
+        "title": "Votes for Women! A Centennial Celebration of the Women’s Suffrage Movement in America",
+        "field_published_on": "August 12, 2020",
+        "field_image": "/images/suffrage-article.jpg",
+        "field_image_alt": "National Women's Party Picketing White House"
+      }
+    },
+    {
+      "name": "card",
+      "label": "Home Page News Card",
+      "status": "wip",
+      "preview": "@preview"
+    }
+  ]
+}
