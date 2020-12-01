@@ -1,0 +1,160 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Source+Sans+Pro:300,300i,400,400i,700,700i" />
+        <link rel="stylesheet" media="all" href="//cdn01.its.msstate.edu/e/font-awesome/5.8.1/css/all.min.css" />
+        <link rel="stylesheet" media="all" href="//cdn01.its.msstate.edu/i/msstatehighfive/1.0.3/css/msstatehighfive.min.css?54a830b" />
+        <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" />
+        <link rel="stylesheet" media="all" href="//cdn01.its.msstate.edu/e/font-awesome/5.8.1/css/all.min.css">
+        <link rel="stylesheet" media="all" href="../../css/app.css" />
+        <script src="https://cdn01.its.msstate.edu/e/jquery/3.3.1/jquery-3.3.1.min.js"></script>
+        <script src="https://cdn01.its.msstate.edu/i/msstatehighfive/1.0.3/js/msstatehighfive.min.js?54a830b"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="../../js/disclosureMenu.js"></script>
+        <script src="../../js/app.js"></script>
+        <title>Preview Layout</title>
+    </head>
+    <body>
+        <div id="page">
+            <div class="page page-detail" role="main">
+                <div class="container-fluid">
+                    <div id="main-content" class="main-content col-12">
+                        <div class="row search justify-content-center">
+    <div class="col-12 col-lg-10 rounded bg-light mb-1">
+        <div class="row">
+            <div class="col-12">
+                <div class="row py-4">
+                    <div class="col-md-3 mb-4">
+                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-pills-ebsco-tab" data-toggle="pill" href="#v-pills-ebsco" role="tab" aria-controls="v-pills-ebsco" aria-selected="true">Multi-Search</a>
+                            <a class="nav-link" id="v-pills-catalog-tab" data-toggle="pill" href="#v-pills-catalog" role="tab" aria-controls="v-pills-catalog" aria-selected="false">Books & More</a>
+                            <a class="nav-link" id="v-pills-gs-tab" data-toggle="pill" href="#v-pills-gs" role="tab" aria-controls="v-pills-gs" aria-selected="false">Google Scholar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-ebsco" role="tabpanel" aria-labelledby="v-pills-ebsco-tab">
+                            <form action="#" id="ebscoquery" method="get" name="q">
+                                <div class="form-group">
+                                    <div class="h4 mb-2">Search EBSCO Discovery Service</div>
+                                    <div class="input-group">
+                                        <input name="q" size="50" maxlength="100" type="text" class="form-search form-control" placeholder="Find articles, books and more...">             
+                                        <span class="input-group-btn">
+                                            <button class="btn-primary btn">
+                                                <span class="sr-only">Search</span>
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div id="includeFT">
+                                        <input type="checkbox" id="chkFullText" name="chkFullText">
+                                        <label for="chkFullText"> Full Text Online</label> 
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="#"
+                                        data-toggle="tooltip" 
+                                        data-placement="bottom" 
+                                        data-html="true"
+                                        title="
+                                        <em>Resources included:</em>
+                                        <ul class='text-left'>
+                                            <li>MSU Catalog</li>
+                                            <li>Digital Collections</li>
+                                            <li>and more</li>
+                                        </ul>
+                                        "
+                                        >What am I searching? <span class="fas fa-info-circle"></span></a>
+                                    </div>
+                                </div>
+                            </form>                    
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-catalog" role="tabpanel" aria-labelledby="v-pills-catalog-tab">
+                            <form action="#" id="catalogquery" method="get" name="q">
+                                <div class="form-group">
+                                    <div class="h4 mb-2">Search MSU Libraries Catalog</div>
+                                    <div class="input-group">
+                                        <input name="q" size="50" maxlength="100" type="text" class="form-search form-control" placeholder="Find books, journals, media and more...">             
+                                        <span class="input-group-btn">
+                                            <button class="btn-primary btn">
+                                                <span class="sr-only">Search</span>
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="spacer">
+                                        <label>&nbsp;</label> 
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="#"
+                                        data-toggle="tooltip" 
+                                        data-placement="bottom" 
+                                        data-html="true"
+                                        title="
+                                        <em>Resources included:</em>
+                                        <ul class='text-left'>
+                                            <li>MSU Catalog</li>
+                                            <li>Digital Collections</li>
+                                            <li>and more</li>
+                                        </ul>
+                                        "
+                                        >What am I searching? <span class="fas fa-info-circle"></span></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-gs" role="tabpanel" aria-labelledby="v-pills-gs-tab">
+                            <form action="#" id="gquery" method="get" name="q">
+                                <div class="form-group">
+                                    <div class="h4 mb-2">Search Google Scholar</div>
+                                    <div class="input-group">
+                                        <input name="q" size="50" maxlength="100" type="text" class="form-search form-control" placeholder="The power of Google, the full-text of MSU">             
+                                        <span class="input-group-btn">
+                                            <button class="btn-primary btn">
+                                                <span class="sr-only">Search</span>
+                                                <span class="fas fa-search"></span>
+                                            </button>
+                                        </span>
+                                    </div>
+                                    <div class="spacer">
+                                        <label>&nbsp;</label> 
+                                    </div>
+                                    <div class="text-right">
+                                        <a href="#"
+                                        data-toggle="tooltip" 
+                                        data-placement="bottom" 
+                                        data-html="true"
+                                        title="
+                                        <em>Resources included:</em>
+                                        <ul class='text-left'>
+                                            <li>MSU Catalog</li>
+                                            <li>Digital Collections</li>
+                                            <li>and more</li>
+                                        </ul>
+                                        "
+                                        >What am I searching? <span class="fas fa-info-circle"></span></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
